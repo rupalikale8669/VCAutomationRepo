@@ -37,9 +37,6 @@ public class CustomerDetailsStepDef extends IOSBaseTest {
     public void i_have_click_on_continue_button() {
 
     }
-    @And("I am on the Quote summary page")
-    public void i_am_on_the_quote_summary_page() {
 
-    }
 
 }
