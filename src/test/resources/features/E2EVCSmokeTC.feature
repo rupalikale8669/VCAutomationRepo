@@ -33,6 +33,7 @@ Feature: VCShowroom test cases for Login,search and create new project Feature
       | Name | AddressLine       | AddressLine2 | City         | StateProvinces | ZipPostalCode | Country |
       | RINA | 1890 Thunder Road | Redwood City | Redwood City | Toronto        | 94065         | US      |
     And I have click on Continue button
+    And I am on the Quote summary page
 
   Scenario: Install iOS app, search product, create new project and add customer details
     Given I am on the home page
