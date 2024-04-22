@@ -29,7 +29,10 @@ Feature: VCShowroom test cases for Login,search and create new project Feature
     And I enter the following customer details:
       | ProjectEmail   | PhoneNumber | CompanyName | Name | AddressLine       | AddressLine2 | City         | StateProvinces | ZipPostalCode | Country |
       | test@gmail.com | 988965555   | Facebook    | JON  | 1890 Thunder Road | Redwood City | Redwood City | California     | 94063         | US      |
-
+    And I have enter the billing address
+      | Name | AddressLine | AddressLine2 | City | StateProvinces | ZipPostalCode | Country |
+      |      |             |              |      |                |               |         |
+    And I have click on Continue button
 
   Scenario: Install iOS app, search product, create new project and add customer details
     Given I am on the home page
