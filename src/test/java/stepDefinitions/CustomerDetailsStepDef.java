@@ -30,4 +30,16 @@ public class CustomerDetailsStepDef extends IOSBaseTest {
         }
 
     }
+    @And("I have enter the billing address")
+    public void i_have_enter_the_billing_address(DataTable dataTable) {
+    }
+    @And("I have click on Continue button")
+    public void i_have_click_on_continue_button() {
+
+    }
+    @And("I am on the Quote summary page")
+    public void i_am_on_the_quote_summary_page() {
+
+    }
+
 }
