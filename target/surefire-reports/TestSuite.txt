@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.741 s <<< FAILURE! -- in TestSuite
+runner.TestRunner.runScenario["Install iOS app, search product, and create new project", "VCShowroom test cases for Login,search and create new project Feature"](1) -- Time elapsed: 0.484 s <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The application at '/Users/qa/IdeaProjects/VCShowroomAppiumBDDFramework//src//test//java//resources//VCShowroomApp_Stage.app' does not exist or is not accessible 
+Host info: host: 'RysunLabss-Pune-1626-Mac-mini.local', ip: '127.0.0.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '21.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{platformName=IOS, appium:automationName=XCuiTest, appium:deviceName=iPad (10th generation), appium:wdaLaunchTimeout=20000, appium:platformVersion=17.2, appium:app=/Users/qa/IdeaProjects/VCShowroomAppiumBDDFramework//src//test//java//resources//VCShowroomApp_Stage.app}], desiredCapabilities=Capabilities {appium:app: /Users/qa/IdeaProjects/VCSh..., appium:automationName: XCuiTest, appium:deviceName: iPad (10th generation), appium:platformVersion: 17.2, appium:wdaLaunchTimeout: 20000, platformName: IOS}}]
+Capabilities {appium:app: /Users/qa/IdeaProjects/VCSh..., appium:automationName: XCuiTest, appium:deviceName: iPad (10th generation), appium:platformVersion: 17.2, appium:wdaLaunchTimeout: 20000, platformName: IOS}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:101)
+	at testUtils.IOSBaseTest.ConfigurationAppium(IOSBaseTest.java:72)
+	at stepDefinitions.InstallAppStepDef.user_has_installed_the_i_os_mobile_app(InstallAppStepDef.java:13)
+	at ✽.User has installed the iOS mobile app(file:///Users/qa/IdeaProjects/VCShowroomAppiumBDDFramework/src/test/resources/features/E2EVCSmokeTC.feature:5)
+
