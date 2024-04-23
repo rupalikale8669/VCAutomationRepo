@@ -32,6 +32,7 @@ public class CustomerDetailsStepDef extends IOSBaseTest {
     }
     @And("I have enter the billing address")
     public void i_have_enter_the_billing_address(DataTable dataTable) {
+        System.out.println("user is adding billing address details!!");
     }
     @And("I have click on Continue button")
     public void i_have_click_on_continue_button() {
