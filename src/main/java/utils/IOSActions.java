@@ -17,17 +17,19 @@ import static io.appium.java_client.touch.offset.ElementOption.element;
 public class IOSActions extends AppiumUtils {
     IOSDriver driver;
     private final WebDriverWait wait;
+    private TouchAction touchAction;
 
     public IOSActions(IOSDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
-    public void tapOnElement(WebElement element){
-        TouchAction action=new TouchAction(driver);
-        action.tap(tapOptions().withElement(element(element))).perform();
 
+    public void tapOnElement(WebElement element) {
+        touchAction = new TouchAction(driver);
+        touchAction.tap(tapOptions().withElement(element(element))).perform();
     }
-    public void sendKeysWithWait(WebElement element,String text){
+
+    public void sendKeysWithWait(WebElement element, String text) {
         try {
             WebElement inputElement = wait.until(ExpectedConditions.elementToBeClickable(element));
             inputElement.clear();
