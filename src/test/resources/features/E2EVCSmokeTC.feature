@@ -1,4 +1,4 @@
-@Regression @TC_TC01 @TC02 @TC03 @TC04 @TC05 @TC_9994 @TC_10005 @TC_10039 @TC_14119 @TC_14118
+@Regression @TC02 @TC03 @TC04 @TC05 @TC_9994 @TC_10005 @TC_10039 @TC_14119 @TC_14118
 Feature: VCShowroom test cases for Login,search and create new project Feature
 
   Background:
@@ -35,6 +35,7 @@ Feature: VCShowroom test cases for Login,search and create new project Feature
     And I have click on Continue button
     And I am on the Quote summary page
 
+  @TC_TC01
   Scenario: Install iOS app, search product, create new project and add customer details
     Given I am on the home page
     When I have created a new project
@@ -47,8 +48,9 @@ Feature: VCShowroom test cases for Login,search and create new project Feature
     And I enter the following customer details:
       | ProjectEmail   | PhoneNumber | CompanyName | Name  | AddressLine       | AddressLine2 | City         | StateProvinces | ZipPostalCode | Country |
       | test@gmail.com | 988965555   | Google      | April | 1890 Thunder Road | Redwood City | Redwood City | California     | 94063         | US      |
-
-
+   And I Click on checkBox as use same Address for billing option
+    And I have click on Continue button
+    And I am on the Quote summary page
 
 
 

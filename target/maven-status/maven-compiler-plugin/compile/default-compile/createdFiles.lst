@@ -1,8 +1,0 @@
-vcpageObjects/CreateProjectPage.class
-utils/AppiumUtils.class
-vcpageObjects/SignOutPage.class
-vcpageObjects/HomePage.class
-vcpageObjects/ViewProjectPage.class
-vcpageObjects/ProductSearchPage.class
-utils/IOSActions.class
-vcpageObjects/LoginPage.class

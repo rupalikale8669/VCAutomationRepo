@@ -36,8 +36,12 @@ public class CustomerDetailsStepDef extends IOSBaseTest {
     }
     @And("I have click on Continue button")
     public void i_have_click_on_continue_button() {
-
+        customerDetailsPage.clickOnContinueButton();
     }
 
 
+    @And("I Click on checkBox as use same Address for billing option")
+    public void i_Click_On_CheckBox_As_Use_Same_Address_For_Billing_Option() {
+        customerDetailsPage.clickOnCheckBox();
+    }
 }

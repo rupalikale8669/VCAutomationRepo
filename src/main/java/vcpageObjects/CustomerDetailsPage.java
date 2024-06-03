@@ -50,6 +50,11 @@ public class CustomerDetailsPage extends IOSActions {
     @iOSXCUITFindBy(iOSClassChain ="**/XCUIElementTypeWindow/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[7]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[5]/XCUIElementTypeOther[2]/XCUIElementTypeOther[20]/XCUIElementTypeTextField")
     private WebElement countryInputText;
 
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`name == \"  Use same address for billing\"`]")
+    private WebElement checkBox;
+
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`name == \"CONTINUE\"`]")
+    private WebElement continueButton;
 
     /*public void addCustomerDetails(Map<String, String> customerDetails) throws InterruptedException {
         Thread.sleep(2000);
@@ -76,6 +81,12 @@ public class CustomerDetailsPage extends IOSActions {
         sendKeysWithWait(stateProvincesInputText, customerDetails.get("StateProvinces"));
         sendKeysWithWait(zipPostalCodeInputText, customerDetails.get("ZipPostalCode"));
         sendKeysWithWait(countryInputText, customerDetails.get("Country"));
+    }
+    public void clickOnCheckBox(){
+        checkBox.click();
+    }
+    public void clickOnContinueButton(){
+        continueButton.click();
     }
 
 
